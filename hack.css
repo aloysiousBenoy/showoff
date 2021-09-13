@@ -1,0 +1,75 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  color: white;
+  font-family: monospace;
+  font-size: 42;
+}
+.card-list {
+  display: flex;
+  padding: 5rem;
+}
+.intro {
+  position: relative;
+  flex-direction: column;
+  height: 600px;
+  width: 400px;
+  min-width: 100px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -0.5rem 0 3rem 0 rgb(184, 27, 114);
+  transition: 0.2s;
+}
+.vision {
+  position: relative;
+  flex-direction: column;
+  height: auto;
+  width: 400px;
+  min-width: 200px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: #17141d;
+  box-shadow: -1rem 0 3rem black;
+  transition: 0.2s;
+}
+.intro:hover {
+  transform: translateY(-2rem);
+}
+.intro:hover ~ .vision {
+  transform: translateX(100px);
+}
+.vision:hover ~ .vision {
+  transform: translateX(100px);
+}
+.vision:hover {
+  transform: translateY(-2rem);
+}
+.vision:not(:first-child) {
+  margin-left: -100px;
+}
+.member {
+  position: relative;
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  align-items: center;
+  margin: 3rem 0 0;
+}
+.us img {
+  display: block;
+  width: 70px;
+  height: 70 px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: top center;
+  padding-right: 2rem;
+  margin: 16px 10px 16px 10px;
+}
+p {
+  font-size: 20px;
+}
+h1 {
+  font-size: 40px;
+}
